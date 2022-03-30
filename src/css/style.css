@@ -5,8 +5,16 @@
     --color-blue: #0000B2; 
     --font-color-popUp: #F0E8E1;
     --font-color-popUp-title: rgb(175, 205, 206);
+    --modal-color: rgb(53, 62, 63);
 }
 
+main {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 section.tabuleiro {
@@ -57,4 +65,57 @@ section.tabuleiro div.infos{
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+}
+
+.show {
+    height: 75vh;
+    width: 75vw;
+    background-color: var(--modal-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#popUp_title {
+    text-align: center;
+    font-size: 30px;
+    color: var(--font-color-popUp-title);
+}
+
+#popUp_form {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    color: var(--font-color-popUp);
+}
+
+#input_name {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#popUp_button{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: var(--font-color-popUp);
+}
+
+#popUp_button:hover{
+    background-color: var(--font-color-popUp-title);
+    
+}
+
+.hide {
+    display: none;
+
 }
