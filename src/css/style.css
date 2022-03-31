@@ -8,6 +8,59 @@
     --modal-color: rgb(53, 62, 63);
 }
 
+@keyframes animacaoGreen{
+    50%{
+        background-color: #00CC00;
+        transform: scale(1.05);
+        box-shadow: 0px 5px 50px 5px rgba(255, 255, 255, 0.8); 
+    }
+}
+
+
+@keyframes animacaoYellow{
+    50%{
+        background-color: #CCC000;
+        transform: scale(1.05);
+        box-shadow: 0px 5px 50px 5px rgba(255, 255, 255, 0.8); 
+    }
+}
+
+@keyframes animacaoBlue{
+    50%{
+        background-color: #0000CC;
+        transform: scale(1.05);
+        box-shadow: 0px 5px 50px 5px rgba(255, 255, 255, 0.8); 
+    }
+}
+
+@keyframes animacaoRed{
+    50%{
+        background-color: #CC0000;
+        transform: scale(1.05);
+        box-shadow: 0px 5px 50px 5px rgba(255, 255, 255, 0.8); 
+    }
+}
+
+.animacaogreen{
+    animation-name: animacaoGreen;
+    animation-duration: 1s;
+}
+
+.animacaored{
+    animation-name: animacaoRed;
+    animation-duration: 1s;
+}
+
+.animacaoblue{
+    animation-name: animacaoBlue;
+    animation-duration: 1s;
+}
+
+.animacaoyellow{
+    animation-name: animacaoYellow;
+    animation-duration: 1s;
+}
+
 main {
     background-color: black;
     height: 100vh;
